@@ -182,8 +182,264 @@
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="@+id/imageView3"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/textView4"
+                    app:layout_constraintStart_toStartOf="@+id/constraintLayout"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:background="@drawable/category_background">
+
+                                <ImageView
+                                    android:id="@+id/imageView2"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0"
+                                    app:srcCompat="@drawable/pizza" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:text="Pizza"
+                                    android:textColor="#92a26b"
+                                    android:layout_marginTop="-5dp"
+                                    android:textSize="14sp"
+                                    app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                                    app:layout_constraintStart_toStartOf="@+id/imageView2"
+                                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/mainLayout1"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="18dp"
+                                android:background="@drawable/category_background">
+
+                                <ImageView
+                                    android:id="@+id/categoryPic1"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0"
+                                    app:srcCompat="@drawable/burger" />
+
+                                <TextView
+                                    android:id="@+id/categoryName1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:layout_marginTop="-5dp"
+                                    android:text="Burger"
+                                    android:textColor="#92a26b"
+                                    android:textSize="14sp"
+                                    app:layout_constraintEnd_toEndOf="@+id/categoryPic1"
+                                    app:layout_constraintStart_toStartOf="@+id/categoryPic1"
+                                    app:layout_constraintTop_toBottomOf="@+id/categoryPic1" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/mainLayout2"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="18dp"
+                                android:background="@drawable/category_background">
+
+                                <ImageView
+                                    android:id="@+id/categoryPic2"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0"
+                                    app:srcCompat="@drawable/salad" />
+
+                                <TextView
+                                    android:id="@+id/categoryName2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:layout_marginTop="-5dp"
+                                    android:text="Salad"
+                                    android:textColor="#92a26b"
+                                    android:textSize="14sp"
+                                    app:layout_constraintEnd_toEndOf="@+id/categoryPic2"
+                                    app:layout_constraintStart_toStartOf="@+id/categoryPic2"
+                                    app:layout_constraintTop_toBottomOf="@+id/categoryPic2" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/mainLayout3"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="18dp"
+                                android:background="@drawable/category_background">
+
+                                <ImageView
+                                    android:id="@+id/categoryPic3"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0"
+                                    app:srcCompat="@drawable/dessert" />
+
+                                <TextView
+                                    android:id="@+id/categoryName3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:layout_marginTop="-5dp"
+                                    android:text="Dessert"
+                                    android:textColor="#92a26b"
+                                    android:textSize="14sp"
+                                    app:layout_constraintEnd_toEndOf="@+id/categoryPic3"
+                                    app:layout_constraintStart_toStartOf="@+id/categoryPic3"
+                                    app:layout_constraintTop_toBottomOf="@+id/categoryPic3" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/mainLayout4"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="18dp"
+                                android:background="@drawable/category_background">
+
+                                <ImageView
+                                    android:id="@+id/categoryPic4"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0"
+                                    app:srcCompat="@drawable/soup" />
+
+                                <TextView
+                                    android:id="@+id/categoryName4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:layout_marginTop="-5dp"
+                                    android:text="Soup"
+                                    android:textColor="#92a26b"
+                                    android:textSize="14sp"
+                                    app:layout_constraintEnd_toEndOf="@+id/categoryPic4"
+                                    app:layout_constraintStart_toStartOf="@+id/categoryPic4"
+                                    app:layout_constraintTop_toBottomOf="@+id/categoryPic4" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/mainLayout5"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="18dp"
+                                android:background="@drawable/category_background">
+
+                                <ImageView
+                                    android:id="@+id/categoryPic5"
+                                    android:layout_width="55dp"
+                                    android:layout_height="55dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0"
+                                    app:srcCompat="@drawable/coffee" />
+
+                                <TextView
+                                    android:id="@+id/categoryName5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:layout_marginTop="-10dp"
+                                    android:text="Coffee"
+                                    android:textColor="#92a26b"
+                                    android:textSize="14sp"
+                                    app:layout_constraintEnd_toEndOf="@+id/categoryPic5"
+                                    app:layout_constraintStart_toStartOf="@+id/categoryPic5"
+                                    app:layout_constraintTop_toBottomOf="@+id/categoryPic5" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/mainLayout6"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="18dp"
+                                android:layout_marginEnd="16dp"
+                                android:background="@drawable/category_background">
+
+                                <ImageView
+                                    android:id="@+id/categoryPic6"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0"
+                                    app:srcCompat="@drawable/cocktail" />
+
+                                <TextView
+                                    android:id="@+id/categoryName6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:layout_marginTop="-5dp"
+                                    android:text="Cocktail"
+                                    android:textColor="#92a26b"
+                                    android:textSize="14sp"
+                                    app:layout_constraintEnd_toEndOf="@+id/categoryPic6"
+                                    app:layout_constraintStart_toStartOf="@+id/categoryPic6"
+                                    app:layout_constraintTop_toBottomOf="@+id/categoryPic6" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerView"
@@ -193,11 +449,13 @@
                     android:clipToPadding="false"
                     android:paddingStart="22dp"
                     android:paddingEnd="22dp"
+                    android:visibility="invisible"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/textView2"
                     app:layout_constraintTop_toBottomOf="@+id/textView8">
 
                 </androidx.recyclerview.widget.RecyclerView>
+
 
                 <TextView
                     android:id="@+id/textView9"
@@ -209,8 +467,8 @@
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="@+id/imageView3"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/textView2"
-                    app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+                    app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
