@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/food_cardview"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/item_food_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/item_food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/item_food_image"
+            android:layout_toEndOf="@id/item_food_image"
+            android:text="Food Name"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_food_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_food_name"
+            android:layout_toRightOf="@id/item_food_image"
+            android:layout_toEndOf="@id/item_food_image"
+            android:text="Price: $0.00"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_food_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_food_price"
+            android:layout_toRightOf="@id/item_food_image"
+            android:layout_toEndOf="@id/item_food_image"
+            android:text="Quantity: 1"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_food_ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_food_quantity"
+            android:layout_toRightOf="@id/item_food_image"
+            android:layout_toEndOf="@id/item_food_image"
+            android:text="Ingredients: "
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
