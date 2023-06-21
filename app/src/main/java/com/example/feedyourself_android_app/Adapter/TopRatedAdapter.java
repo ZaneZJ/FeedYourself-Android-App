@@ -6,7 +6,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
@@ -24,15 +23,14 @@ public class TopRatedAdapter extends RecyclerView.Adapter<TopRatedAdapter.ViewHo
         this.foodDomains = foodDomains;
     }
 
-    @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.viewholder_cat,parent,false);
         return new ViewHolder(inflate);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, int position) {
         holder.categoryName.setText(foodDomains.get(position).getTitle());
         String picUrl = "";
         switch (position) {
@@ -90,7 +88,7 @@ public class TopRatedAdapter extends RecyclerView.Adapter<TopRatedAdapter.ViewHo
         ImageView categoryPic;
         ConstraintLayout mainLayout;
 
-        public  ViewHolder(@NonNull View itemView) {
+        public  ViewHolder(View itemView) {
             super(itemView);
             categoryName=itemView.findViewById(R.id.categoryName);
             categoryPic=itemView.findViewById(R.id.categoryPic);
